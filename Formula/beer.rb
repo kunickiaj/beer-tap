@@ -5,11 +5,11 @@ class Beer < Formula
   version "0.2.2"
 
   if OS.mac?
-    url "https://github.com/kunickiaj/beer/releases/v0.2.2/beer_0.2.2_Darwin_x86_64.tar.gz"
-    sha256 "15aeef65b8fee4fbbfc43c9826fff4af3ec9a2ef72373116577d5dc4f4037675"
+    url "https://github.com/kunickiaj/beer/releases/download/v0.2.2/beer_0.2.2_Darwin_x86_64.tar.gz"
+    sha256 "7ab58f68c745842f35b27acd0bac0ebb8227dd44bb033fb53b61fb40a98ac101"
   elsif OS.linux?
-    url "https://github.com/kunickiaj/beer/releases/v0.2.2/beer_0.2.2_Linux_x86_64.tar.gz"
-    sha256 "6dd8657242ba9fb3f98ddacbabe23eb3ae4c8d38d5bed0485d8dffc6bfa0b4ca"
+    url "https://github.com/kunickiaj/beer/releases/download/v0.2.2/beer_0.2.2_Linux_x86_64.tar.gz"
+    sha256 "8b6137e6b7542e2ecc74b1f170c651c11271d15052730bab37c2cd1620448338"
   end
 
   def install
