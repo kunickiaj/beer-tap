@@ -6,10 +6,10 @@ class Beer < Formula
 
   if OS.mac?
     url "https://github.com/kunickiaj/beer/releases/v0.2.2/beer_0.2.2_Darwin_x86_64.tar.gz"
-    sha256 "7877b72bd42343bd3abbfd41f8645e01bf257abd6469ddadcb61b23fedc1a729"
+    sha256 "15aeef65b8fee4fbbfc43c9826fff4af3ec9a2ef72373116577d5dc4f4037675"
   elsif OS.linux?
     url "https://github.com/kunickiaj/beer/releases/v0.2.2/beer_0.2.2_Linux_x86_64.tar.gz"
-    sha256 "41838c25b2dad665e7d8755e65c9e38c7f8560d056d712a4ed58a29451c67187"
+    sha256 "6dd8657242ba9fb3f98ddacbabe23eb3ae4c8d38d5bed0485d8dffc6bfa0b4ca"
   end
 
   def install
