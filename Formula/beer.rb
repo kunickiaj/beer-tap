@@ -2,14 +2,15 @@
 class Beer < Formula
   desc "CLI for managing your JIRA / Gerrit / git workflow."
   homepage "https://github.com/kunickiaj/beer"
-  version "0.2.2"
+  version "0.2.3"
+  bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/kunickiaj/beer/releases/download/v0.2.2/beer_0.2.2_Darwin_x86_64.tar.gz"
-    sha256 "7ab58f68c745842f35b27acd0bac0ebb8227dd44bb033fb53b61fb40a98ac101"
+    url "https://github.com/kunickiaj/beer/releases/download/v0.2.3/beer_0.2.3_Darwin_x86_64.tar.gz"
+    sha256 "f0392bd5fe3972748c09f3450a9699ef90c511631fa5a94f16e0f0a9a9836ac2"
   elsif OS.linux?
-    url "https://github.com/kunickiaj/beer/releases/download/v0.2.2/beer_0.2.2_Linux_x86_64.tar.gz"
-    sha256 "8b6137e6b7542e2ecc74b1f170c651c11271d15052730bab37c2cd1620448338"
+    url "https://github.com/kunickiaj/beer/releases/download/v0.2.3/beer_0.2.3_Linux_x86_64.tar.gz"
+    sha256 "c1b13974a4209225b5889ec74e5fb0f65403d2b7f56d61e43d0506672e00393d"
   end
 
   def install
