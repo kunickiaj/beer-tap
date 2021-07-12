@@ -5,32 +5,32 @@
 class Beer < Formula
   desc "CLI for managing your JIRA / Gerrit / git workflow."
   homepage "https://github.com/kunickiaj/beer"
-  version "0.5.0"
+  version "0.6.0"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kunickiaj/beer/releases/download/v0.5.0/beer_0.5.0_Darwin_x86_64.tar.gz"
-      sha256 "27d9642eaca17a155d2877ef4e41480766763df0b9318333401141d187a244f8"
+      url "https://github.com/kunickiaj/beer/releases/download/v0.6.0/beer_0.6.0_Darwin_x86_64.tar.gz"
+      sha256 "849f84a123f4a7f9e7b4ccff00a2f629b19cf1b5b4387a52958126a0dceb508d"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kunickiaj/beer/releases/download/v0.5.0/beer_0.5.0_Darwin_arm64.tar.gz"
-      sha256 "666418405cc1284e9244fe9890966917aff280aab732c2e231271439751ace2e"
+      url "https://github.com/kunickiaj/beer/releases/download/v0.6.0/beer_0.6.0_Darwin_arm64.tar.gz"
+      sha256 "79f695db8d855641910e6946d1c6728afb4eee281b890cab556f1e5c2465b6f4"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/kunickiaj/beer/releases/download/v0.5.0/beer_0.5.0_Linux_x86_64.tar.gz"
-      sha256 "1f01d0497942414ae003f2ab420929d284c7f5efd182f04960b8496b43bed949"
+      url "https://github.com/kunickiaj/beer/releases/download/v0.6.0/beer_0.6.0_Linux_x86_64.tar.gz"
+      sha256 "8476484691f178d95f051c5f6715cb4066462b14210f06af955a912e464a7b50"
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/kunickiaj/beer/releases/download/v0.5.0/beer_0.5.0_Linux_armv6.tar.gz"
-      sha256 "3862a7a992236af9e67e674df2cfe8ada62874a6b514b475951d50bbe28f1325"
+      url "https://github.com/kunickiaj/beer/releases/download/v0.6.0/beer_0.6.0_Linux_armv6.tar.gz"
+      sha256 "326a6fdd05930fdf0c21483eecd172b41932ad3b5b4d0f3f5c74229dae2c4d66"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kunickiaj/beer/releases/download/v0.5.0/beer_0.5.0_Linux_arm64.tar.gz"
-      sha256 "0c62ad6cdd13907b9015df1a5e32a049f89b15485364421dbb5f248b5e0a7502"
+      url "https://github.com/kunickiaj/beer/releases/download/v0.6.0/beer_0.6.0_Linux_arm64.tar.gz"
+      sha256 "d225fe1a4a7f7f31b45fa541d11ab2bfe78d73ef29049544f87bead423696ffc"
     end
   end
 
