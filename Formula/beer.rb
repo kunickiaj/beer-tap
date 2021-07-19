@@ -11,14 +11,14 @@ class Beer < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/kunickiaj/beer/releases/download/v0.6.1/beer_0.6.1_darwin_x86_64.tar.gz"
-      sha256 "cdd7149176fdd7f8f268882c6834b3b9f9fddcfa925fed13dc346bf41ddc10ae"
+      sha256 "0a8ef69b37e4fb6ec2f89fb3f9a9ebcbf64ec199047b29fddbaacfe0033138b6"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/kunickiaj/beer/releases/download/v0.6.1/beer_0.6.1_Linux_x86_64.tar.gz"
-      sha256 "1e1fb268e2607cd6f7d18a5f9008bb6ab8fd868d8fa2587c419e48c17a2ae9c0"
+      sha256 "725525707db1300e4b71a4d2d9b33fb8f6d867a1b43b70e57e5230d0552ee9c0"
     end
   end
 
