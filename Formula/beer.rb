@@ -5,20 +5,20 @@
 class Beer < Formula
   desc "CLI for managing your JIRA / Gerrit / git workflow."
   homepage "https://github.com/kunickiaj/beer"
-  version "0.6.1"
+  version "0.6.2"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kunickiaj/beer/releases/download/v0.6.1/beer_0.6.1_darwin_x86_64.tar.gz"
-      sha256 "0a8ef69b37e4fb6ec2f89fb3f9a9ebcbf64ec199047b29fddbaacfe0033138b6"
+      url "https://github.com/kunickiaj/beer/releases/download/v0.6.2/beer_0.6.2_darwin_x86_64.tar.gz"
+      sha256 "e29287bd50ef086a1415c580e473d3dfce86506d2f893ffdded5faa800caaea3"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/kunickiaj/beer/releases/download/v0.6.1/beer_0.6.1_Linux_x86_64.tar.gz"
-      sha256 "725525707db1300e4b71a4d2d9b33fb8f6d867a1b43b70e57e5230d0552ee9c0"
+      url "https://github.com/kunickiaj/beer/releases/download/v0.6.2/beer_0.6.2_Linux_x86_64.tar.gz"
+      sha256 "294ac8329a135ef4c057ba6ca6a970a2a21aa02264245bc5fac62d01b32baea6"
     end
   end
 
