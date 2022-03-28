@@ -5,29 +5,36 @@
 class Beer < Formula
   desc "CLI for managing your JIRA / Gerrit / git workflow."
   homepage "https://github.com/kunickiaj/beer"
-  version "0.6.3"
-  bottle :unneeded
+  version "0.6.4"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/kunickiaj/beer/releases/download/v0.6.3/beer_0.6.3_macOS_x86_64.tar.gz"
-      sha256 "1fb9120090b5f40b97c837404289da4c8e957b1a102553705ed47b3b0a92b38a"
-    end
     if Hardware::CPU.arm?
-      url "https://github.com/kunickiaj/beer/releases/download/v0.6.3/beer_0.6.3_macOS_arm64.tar.gz"
-      sha256 "46bc976ed4f2c831b916295dc716f13a604c6e99d6f2ff87e405f640979cb5cd"
+      url "https://github.com/kunickiaj/beer/releases/download/v0.6.4/beer_0.6.4_macOS_arm64.tar.gz"
+      sha256 "a02ee392c6a1245c0e881ae6ede94647fc313e7a91e2e52c7e60347fa247f252"
+
+      def install
+        bin.install "beer"
+      end
+    end
+    if Hardware::CPU.intel?
+      url "https://github.com/kunickiaj/beer/releases/download/v0.6.4/beer_0.6.4_macOS_x86_64.tar.gz"
+      sha256 "8217b99598d5e4a53dd9c687779b43e2efbe36ba4605d8a1219874b406acf46c"
+
+      def install
+        bin.install "beer"
+      end
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/kunickiaj/beer/releases/download/v0.6.3/beer_0.6.3_Linux_x86_64.tar.gz"
-      sha256 "98dc29f29753c1b8948c7ca42d0de856d0629a5f1ca07e670f86d852bda1d980"
-    end
-  end
+      url "https://github.com/kunickiaj/beer/releases/download/v0.6.4/beer_0.6.4_Linux_x86_64.tar.gz"
+      sha256 "995e6b09e903a51ee9c985d91ff90c15594397e6329622b92ca39ee9ec218612"
 
-  def install
-    bin.install "beer"
+      def install
+        bin.install "beer"
+      end
+    end
   end
 
   test do
